@@ -1,0 +1,30 @@
+
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    background-color: wheat;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    display: flex;
+  flex-direction: column;  /* Faz os elementos ficarem um abaixo do outro */
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center;     /* Centraliza horizontalmente */
+  min-height: 100vh;       /* Garante que o corpo ocupe toda a altura da tela */
+  margin: 0;               /* Remove as margens padrões do navegador */
+}
+section{
+    background: #f1f1f1;
+    border-radius: 10px;
+    padding: 20px;
+    width: 500px;
+    margin: auto;
+    
+}
+header{
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    
+}

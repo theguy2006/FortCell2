@@ -1,0 +1,11 @@
+@media (max-width: 480px) {
+  .menu-desktop {
+    display: none;
+  }
+  .menu-mobile {
+    display: block;
+  }
+  footer {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,75 @@
+@charset "UTF-8";
+body{
+     background-image: url(Estrela_pt.png);
+    background-size: 101px;
+    background-color: #f1f1f1;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+body > h1{
+    text-align: center;
+}
+h1{
+    font-size: 100px;
+    background-color: red;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.552);
+    font-variant: small-caps;
+}
+.control{
+   
+}
+img{
+    position: relative;
+    top: -30px;
+}
+main{
+    text-align: center;
+    
+}
+a{
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    
+    
+
+}
+
+a:hover{
+    color: rgb(198, 0, 0);
+    background-color: rgb(0, 0, 0);
+
+}
+main p{
+    background-color: red;
+    display: inline-block;
+}
+.veja{
+    text-align: left;
+    background-color: red;
+    display: inline-block;
+    
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.odio{
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.462);
+}
+.pergunta{
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 80px;
+}

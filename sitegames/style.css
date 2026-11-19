@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #0f0f0f;
+  color: #f1f1f1;
+  font-family: "Barlow Condensed", sans-serif;
+  button {
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    gap: 20px;
+  }
+}
+header {
+  width: 100%;
+  display: flex;
+  padding: 4%;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 99;
+  ul {
+    display: flex;
+    gap: 24px;
+    list-style-type: none;
+    background-color: rgb(241, 241, 241, 0.1);
+    padding: 16px 20px;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    
+  }
+  .menu-mobile {
+  display: none; /* escondido no desktop */
+  position: relative;
+}
+.menu-mobile .btn {
+  background-color: #f1f1f1;
+  padding: 10px;
+  cursor: pointer;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  margin-top: 8px;
+  flex-direction: column;
+}
+.dropdown-menu.aberto {
+  display: flex;
+}   
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+}
+.card {
+  width: 140px;
+}
+.card:hover {
+  cursor: pointer;
+  width: 150px;
+  transition: 0.2s;
+}
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.art1 {
+  background-image: url(assets/Fundo\ Gamer\ Futurista\ em\ Neon\ Azul.png);
+  background-size: cover;
+  background-position: 100vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h2 {
+    font-size: 12vw;
+    text-shadow: 2px 2px 4px black;
+  }
+}
+.principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    text-align: center;
+  }
+
+  .bu {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.primario {
+  background-color: white;
+  gap: 8px;
+  padding: 20px;
+}
+.primario:hover{
+    background-color: rgba(255, 255, 255, 0.468);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.secundario {
+  padding: 16px;
+  background-color: rgb(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.862);
+  cursor: pointer;
+}
+.menu-wrapper {
+  margin-left: 280px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  max-width: 940px;
+}
+.divcards {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto; /* permite rolar para os lados */
+  scroll-behavior: smooth; /* rolagem suave */
+  scrollbar-width: none; /* esconde a barra no Firefox */
+}
+.divcards::-webkit-scrollbar {
+  display: none;
+} /* esconde a barra no Chrome/Safari */
+.icards {
+  .menu a {
+    flex: 0 0 auto; /* impede as opções de encolherem */
+    padding: 8px 16px;
+    background: #eee;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #333;
+  }
+}
+.menu-wrapper button {
+  border: none;
+  background: #ddd;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+.bu {
+  margin-top: 20px;
+}
+span {
+  color: rgb(2, 105, 208);
+}
+h3 {
+  padding-left: 60px;
+}
+.title1 {
+  text-align: center;
+  font-size: 80px;
+  background-color: rgb(0, 69, 139);
+  margin-bottom: 30px;
+}
+.grade-jogos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
+  gap: 24px;
+  padding: 0 4%;
+  margin-bottom: 40px;
+}
+
+.jogo {
+  background-color: rgb(241, 241, 241, 0.05);
+  border-radius: 20px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.jogo img {
+  width: 100%;
+  aspect-ratio: 3 / 4; /* deixa todas as capas do mesmo tamanho */
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.jogo h3 {
+  padding-left: 0; /* seu h3 global tem padding-left: 60px */
+}
+
+.preco {
+  color: rgb(2, 105, 208);
+  font-size: 24px;
+}
+
+.comprar {
+  background-color: #f1f1f1;
+  padding: 10px;
+  cursor: pointer;
+}
+.comprar:hover {
+  background-color: #0f0f0f;
+  color: white;
+  transition: 0.2s;
+}
+.gamename {
+  text-transform: capitalize;
+}
+.card2 {
+  width: 140px;
+  margin-top: -24px;
+  cursor: pointer;
+  
+}
+.card2:hover{
+    width: 150px;
+ transition: 0.2s;
+}
+footer {
+    padding: 20px;
+    outline: 3px solid #f1f1f1;
+    background-color: #00458B;
+    display: flex;
+    align-items: center;      /* alinha verticalmente */
+    justify-content: center;  /* alinha horizontalmente */
+    gap: 20px;                /* espaço entre as imagens */
+}
+
+footer img {
+    display: block;
+}
+.social:hover{
+filter: invert(1);
+cursor: pointer;
+transition: 0.2s;
+}

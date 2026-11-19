@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tactics — Ninety</title>
+  <meta name="description" content="Compare common soccer formations on a pitch and see what each shape asks of the team.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%2316331f'/%3E%3Ccircle cx='16' cy='16' r='6' fill='none' stroke='%23f0b429' stroke-width='2'/%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">Ninety</span>
+      </a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="nav" id="site-nav">
+        <a href="index.html">Home</a>
+        <a href="fixtures.html">Fixtures</a>
+        <a href="tactics.html" aria-current="page">Tactics</a>
+        <a href="culture.html">The game</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <header class="page-hero">
+      <p class="kicker">Shapes</p>
+      <h1>Pick a formation</h1>
+      <p>A formation is a starting map, not a promise. Players leave their spots to press, cover, and arrive in the box. Use the buttons to move the same eleven through three common shapes.</p>
+    </header>
+    <div class="tactics-layout">
+      <aside class="panel">
+        <h2>In possession</h2>
+        <p id="formation-blurb">Width from the wingers, a single pivot behind two eights, fullbacks who can join or stay.</p>
+        <div class="formation-list" id="formation-list"></div>
+        <p class="note" id="formation-note"></p>
+      </aside>
+      <div class="pitch" id="pitch" aria-label="Formation pitch">
+        <div class="center-line"></div>
+        <div class="center-circle"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>
+        <strong>NINETY</strong>
+        <p>Positions are a teaching sketch, not a match freeze-frame.</p>
+      </div>
+      <p>GK through the forward line, top of the pitch is the attack.</p>
+    </div>
+  </footer>
+  <script src="js/site.js"></script>
+</body>
+</html>
